@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_above="@+id/quantity"
+        android:onClick="increment"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:text="count" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="78sp"
+        android:text="000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/quantity"
+        android:layout_centerHorizontal="true"
+        android:onClick="decrement"
+        android:text="decrease"
+        android:textSize="24sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="reset"
+        android:text="reset"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
